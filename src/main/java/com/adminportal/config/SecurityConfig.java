@@ -40,6 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 			"/forgetPassword",
 			"/login",
 			"/fonts/**"
+			
 	};
 	
 	
