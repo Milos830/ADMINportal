@@ -30,7 +30,7 @@
 
 					<!-- AUTHOR -->
 					<div class="form-group">
-						<label class="col-md-2 control-label" for="title">* Author</label>
+						<label class="col-md-2 control-label" for="author">* Author</label>
 
 						<div class="col-md-8">
 							<input type="text" name="author" class="form-control" id="author"
@@ -42,7 +42,7 @@
 
 					<!-- PUBLISHER -->
 					<div class="form-group">
-						<label class="col-md-2 control-label" for="title">Publisher</label>
+						<label class="col-md-2 control-label" for="publisher">Publisher</label>
 
 						<div class="col-md-8">
 							<input type="text" name="publisher" class="form-control"
@@ -91,8 +91,8 @@
 								class="form-control">
 								<option value="" selected="selected" disabled="disabled">Please
 									select an option ....</option>
-								<option value="Managment"
-									th:selected="(${book.category}=='Managment')">Managment</option>
+								<option value="Management"
+									th:selected="(${book.category}=='Management')">Management</option>
 									<option value="Fiction"
 									th:selected="(${book.category}=='Fiction')">Fiction</option>
 									<option value="Sport"
@@ -110,11 +110,11 @@
 
 					<!-- PAGES -->
 					<div class="form-group">
-						<label class="col-md-2 control-label" for="numberOfPages">Number
+						<label class="col-md-2 control-label" for="pageNumber">Number
 							of pages</label>
 						<div class="col-md-8">
 							<input type="number" name="numberOfPages" class="form-control"
-								id="numberOfPages" th:value="${book.numberOfPages}"
+								id="pageNumber" th:value="${book.numberOfPages}"
 								placeholder="Number of pages" /> <span class="help-block">Number
 								of pages of the book</span>
 						</div>
@@ -215,7 +215,7 @@
 						<div class="col-md-8">
 							<textarea name="description" rows="5" class="form-control"
 								id="description" th:value="${book.description}"
-								placeholder="Description" ></textarea>
+								placeholder="Description" />
 							<span class="help-block">Description of the book</span>
 						</div>
 					</div>
